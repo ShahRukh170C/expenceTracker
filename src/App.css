@@ -1,38 +1,273 @@
-.App {
+:root {
+  --main-bg-color: #181b3f;
+  --main-type-transaction: #323876;
+  border: 0;
+  padding: 0;
+  
+}
+
+.contain{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+
+}
+
+
+.mainContainor{
+  height: 100vh;
+  width: 55vw;
+  background-color: var(--main-bg-color);
+  /* border-radius: 10px; */
+  /* border-color: beige; */
+}
+.top{
+  /* border: 1px solid white; */
+  width: 100%;
+  height: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  margin-top: 20px;
+
+}
+
+.date{
+  margin-right: 10px;
+  /* background-color: white; */
+  color: white;
+  /* border: 1px solid red; */
+  border-radius: 100%;
+  height: 80%;
+  width: 10%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  padding: 2px;
+  flex-direction: column;
+  /* border: 1px solid red; */
+}
+.mdate{
+  font-weight: bold;
+}
+.month{
+  font-size: 0.7rem;
+  font-size: small;
+}
+.logo{
+  height: 100%;
   text-align: center;
+  background-color: white;
+  color: black;
+  padding: 2px 8% 2px 8%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 25px;
+  border: 1px solid white;
+  font-size: 1.5rem;
+  width: 50%;
+  /* color: white; */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+/* expence balance  */
+.expence-price{
+  margin-top: 10px;
+  /* border: 1px solid white; */
+  width: 80%;
+  height: 12%;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: row;
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.box{
+  height: 100%;
+  width: 22%;
+  margin-right: 4px ;
+  border: 1px solid rgba(175, 157, 157, 0.5);
+  /* background-color: white; */
+  justify-content: center;
+  align-items: center;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  border-radius: 10px;
+  /* margin-top: 7px; */
+}
+.text{
+  font-weight: 500;
+  color: white;
+  font-size: 0.7rem;
+}
+.user-amount{
+  margin-top: 5px;
+  font-size: 1.2rem;
+  color: rgb(215, 212, 218);
+}
+
+.user-income{
+  margin-top: 5px;
+  font-size: 1.2rem;
+  color: rgb(11, 192, 50);
+}
+.user-expence{
+  margin-top: 5px;
+  font-size: 1.2rem;
+  color: rgb(255, 0, 0);
+}
+
+input{
+  width: 100%;
+}
+/* crate the Transaction item */
+.overFlow{
+  overflow: auto;
+  /* border: 1px sforolid white; */
+  margin-top: 10px;
+  max-height: 200px;
+  /* height: 100%; */
+}
+
+.typeTransaction{
+  height: 14%;
+  width: 90%;
+  border: 2px solid rgba(163, 153, 153, 0.377);
+
+  background-color: var(--main-type-transaction);
+  border-radius: 0px 50px 50px 0px;
+  margin-top: 15px;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  /* border: 1px solid white; */
+}
+
+
+
+
+
+
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgba(248, 241, 241, 0.705); 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #000000be; 
+}
+
+
+
+
+
+
+.neg_postive{
+  border: 1px soild red;
+  height: 100%;
+  width: 7%;
+  border-radius: 100%;
+  margin-right: 10px;
+  
+  width: 0.3%;
+  height: 100%;
+  padding: 3%;
+}
+.btn{
+  margin-top: 0.5rem;
+  height: 2rem;
+  width: 70%;
+  margin-left: 16%;
+}
+.red{
+  background-color:  rgb(255, 19, 19);
+}
+.green{
+  background-color: chartreuse;
+}
+.item{
+  border: 1px soild red;
+  height: 90%;
+  width: 60%;
+  /* background-color: white; */
+  display: flex;
+  flex-direction: column;
+  padding-left: 15px;
+}
+.tet{
+  border: 2px solid red;
+}
+.item-amount{
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: rgb(255, 255, 255);
+}
+
+
+.item-text{
+  font-size: 0.9rem;
+  color: rgb(184, 181, 181);
+
+}
+
+.time{
+  /* height: 100%; */
+  /* width: 10%; */
+  border-radius: 100%;
+  color: rgba(190, 186, 186, 0.493);
+  margin-left: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border: 1px solid rgba(255, 255, 255, 0.233); */
+
+  width: 3%;
+  height: 90%;
+  padding: 10px;
+}
+h2{
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
-}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+
+
+
+
+
+
+
+
+
+/*  */
+form{
+  display: flex;
+  flex-direction: column;
+  color: white;
+  margin: 2px;
+}
+label{
+  margin-bottom: 10px;
+}
+input{
+  height: 2rem;
+  margin-bottom: 2px;
+  text-align: center;
+ 
 }
