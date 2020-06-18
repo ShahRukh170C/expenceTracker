@@ -9,7 +9,7 @@ import {GlobleProvider} from './stateAndReducer/GlobelState';
 let getDateMonth = () => {
   var d = new Date();
   var dateMonth = d.getDate();
-  var month = new Array();
+  var month = new Array('');
   month[0] = "Jan";
   month[1] = "Feb";
   month[2] = "Mar";
