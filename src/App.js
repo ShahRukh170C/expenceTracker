@@ -7,6 +7,7 @@ import {GlobleProvider} from './stateAndReducer/GlobelState';
 
 
 let getDateMonth = () => {
+  // game
   var d = new Date();
   var dateMonth = d.getDate();
   var month = new Array('');
